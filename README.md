@@ -10,19 +10,25 @@ git clone https://github.com/solincosta/fabricacolchones.git
 cd fabricacolchones
 ```
 
-## Crear el archivo .env 
+## Crear el archivo .env (Ajuste su archivo para conectar a su BD)
 ```
-nano .env
-```
+New FILE (.env)
 
-## Agrega las credenciales de la BD OJO las de tu conexión y no las del PROFE
-```
+dentro del archivo .env agregue lo siguiente. según sea su conexión:
+
 DB_HOST=localhost
-DB_PORT=5432
+DB_PORT=3306
 DB_NAME=colchones
 DB_USER=usuariocolchones
 DB_PASSWORD=123456
 PORT=3000
+
+```
+
+## Agrega los registros de la BD
+```
+Cree una base de datos en MySQL que se llame: colchones y dentro de la BD ejecute 
+el script que está dentro del archivo: database.sql
 ```
 
 ## Instalar dependencias
